@@ -1,0 +1,107 @@
+/* Padrão -Tirando todos da página */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Aplicando efeito na logo */
+.logo-microsoft{
+    float: left;
+    margin: 10px;
+    height: 20px;
+    
+
+}
+
+
+/* Colocando todo o dropdown para a esquerda */
+.dropdown{
+    float: left;
+}
+
+
+.barra-superior{
+
+    overflow: hidden;
+    /* Aqui vicê altera a cor do dropdown */
+    background-color: rgb(255, 255, 255);
+    border-top-style: solid;
+    border-top-color: rgba(15, 140, 156, 0.712);
+    border-top-width: 2px;
+    
+}
+/* Aqui vicê está dizendo que todos os UL não vão ser nenhum tipo de lista */
+.barra-superior ul{
+    /*Ao remover isso aqui, os objetos ficam desalinhados */
+    list-style-type: none;
+
+
+}
+/* Aqui você está movendo todo o conteúdo de uma dropdwn para a esqueda */
+.barra-superior >ul >li .dropdown{
+    float: left;
+
+}
+
+/* Aqui você está estilizando todos os ULs lIs e Hrefs  */
+.barra-superior ul li a{
+    text-decoration: none;
+    display: block;
+    
+
+}
+
+
+/* Aqui você altera e personaliza todos os botões do dropdown */
+.dropdown-button{
+    color: rgb(0, 0, 0);
+    /* Aqui no padding, você dimensiona todo o tamanho de todos os lados do botão */
+    padding: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.dropdown-button:hover{
+    background-color: rgb(208, 205, 255);
+}
+/* Estilizando todo o menu do conteúdo do dropdown */
+.dropdown-content > ul > li >a{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(185, 3, 170);
+    padding: 16px;
+    
+
+}
+.dropdown-content > ul > li >a:hover{
+    background-color: white;
+    color: rgb(25, 209, 233);
+    border-color: rgba(4, 238, 168, 0.5);
+    
+    border-style: solid;
+    border-width: 1px;
+    transition: 500ms;
+    border-top-color: blueviolet;
+    
+}
+
+.dropdown .dropdown-content{
+    display: block;
+    max-height: 0px;    
+    position: absolute;
+    overflow: hidden;
+    /* Aqui você define a velocidade de fechamento do dropdown */
+    transition: max-height 800ms;
+    
+    
+
+}
+
+.dropdown:hover .dropdown-content{
+    
+    max-height: 500px;
+
+}
+
+.texto{
+    padding: 16px;
+}
