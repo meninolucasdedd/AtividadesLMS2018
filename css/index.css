@@ -6,9 +6,9 @@
 .logo-superior{
     text-align: center;
     background-color: #374B70;
-    background-image: url(/Trabalho01/img/ufc.jpeg);
+    background-image: url(/AtividadesLMS2018/Trabalho01/img/ufc.jpeg);
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 100%;
     position: relative;
     max-width: auto;
     min-width: auto;
@@ -36,8 +36,8 @@
 }
 
 .barra-superior ul li a:hover{
-    color: white;
-    background-color: #DB754B
+    color: #374B70;
+    background-color: rgb(252, 250, 249);
 }
 
 .conteudo{
