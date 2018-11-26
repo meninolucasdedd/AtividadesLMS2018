@@ -17,14 +17,10 @@ function buscarConversa(){
 **/
  //Aqui a lista Hard Coded
  let listaElementos = [
-    {nome: "Grupo de Oração Almeidinha", id: "1", conversa:"Essa mensagem aqui","lastMessage":"Queima raparigal","pathToPhoto":"users/ldasdllaskldasldk.png"},
-    {nome: "Grupo de Oração Almeidinha", id: "22", conversa:"Essa mensagem aqui","lastMessage":"Queima raparigal","pathToPhoto":"users/ldasdllaskldasldk.png"},
-    {nome: "Grupo de Oração Almeidinha", id: "32", conversa:"Essa mensagem aqui","lastMessage":"Queima raparigal","pathToPhoto":"users/ldasdllaskldasldk.png"},
-    {nome: "Grupo de Oração Almeidinha", id: "42", conversa:"Essa mensagem aqui","lastMessage":"Queima raparigal","pathToPhoto":"users/ldasdllaskldasldk.png"},
-    {nome: "Grupo de Oração Almeidinha", id: "42", conversa:"Essa mensagem aqui","lastMessage":"Queima raparigal","pathToPhoto":"users/ldasdllaskldasldk.png"},
-    {nome: "Grupo de Oração Almeidinha", id: "32", conversa:"Essa mensagem aqui","lastMessage":"Queima raparigal","pathToPhoto":"users/ldasdllaskldasldk.png"},
-    {nome: "Grupo de Oração Almeidinha", id: "12", conversa:"Essa mensagem aqui","lastMessage":"Queima raparigal","pathToPhoto":"users/ldasdllaskldasldk.png"},
-    {nome: "Grupo de Oração Almeidinha", id: "10", conversa:"Essa mensagem aqui","lastMessage":"Queima raparigal","pathToPhoto":"users/ldasdllaskldasldk.png"},
+    {nome: "Coelce, atendimento", id: "1", conversa:"Essa mensagem aqui","lastMessage":"Minha filha ta me levando a pagode mesmo é","pathToPhoto":"img/user.png"},
+    {nome: "Dona Neide", id: "22", conversa:"Essa mensagem aqui","lastMessage":"Eu era uma atriz de novela","pathToPhoto":"img/user.png"},
+    {nome: "Evangélicas", id: "32", conversa:"Essa mensagem aqui","lastMessage":"Almdeidinha: Amém irmãos","pathToPhoto":"img/user.png"},
+   
     
 ];
 
@@ -52,7 +48,7 @@ mountViewContacts();
 
 
 //percorre a lista e adiciona a tag <li> pra cada elemento da lista usando a função append do Jquery
-/*
+
 for(let i=0; i < listaElementos.length; i++){
     $("#grupos").append(
         "<li id="+listaElementos[i].id+">"+listaElementos[i].nome+"</li>"
@@ -64,4 +60,4 @@ for(let i=0; i < listaElementos.length; i++){
         $("#header").html(listaElementos[i].nome);
     });
 }
-*/
+
