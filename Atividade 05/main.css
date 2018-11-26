@@ -159,7 +159,7 @@
     }
     .mobile .menu:hover{
         cursor: pointer;
-       background-color: #f01515;
+        background-color: #f01515;
 
     }
     .mobile .menu:active{
@@ -171,7 +171,9 @@
         text-align: center;
         list-style-type: none;
         display: block;
-        padding: 16px;
+        padding:16px;
+        float: left;
+        width: 100vw;
         background-color:  rgb(100, 31, 211);
         color:white;
         
@@ -217,7 +219,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     text-transform: uppercase;
-    color: #f01515;
+    color: rgb(43, 70, 226);
 }
 
 .barra-lateral h4{

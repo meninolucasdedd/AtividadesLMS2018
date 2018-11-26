@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teste</title>
+</head>
+<body>
+    <!-- header que vai atualizar sempre que clicar no item da lista-->
+    <div id="header">header da página</div>
+
+    <!-- Aqui onde tu vai adicionar os elementos-->
+    <ul id="grupos">
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="/AtividadesLMS2018/ZapWeb/js/jquery.js"></script>
+</body>
+<!-- import do jquery-->
+
+
+<script>
+    //Aqui a lista Hard Coded
+    let listaElementos = [
+        {nome: "Grupo 1", id: "1"},
+        {nome: "Grupo 2", id: "2"},
+        {nome: "Grupo 3", id: "3"},
+        {nome: "Grupo 4", id: "4"},
+        {nome: "Grupo 5", id: "5"}
+    ];
+
+    //percorre a lista e adiciona a tag <li> pra cada elemento da lista usando a função append do Jquery
+    for(let i=0; i < listaElementos.length; i++){
+        $("#grupos").append(
+            "<li id="+listaElementos[i].id+">"+listaElementos[i].nome+"</li>"
+        );
+
+        //pega o elemento da lista que foi adicionado usando o id dele e coloca o evento de click
+        $("#"+listaElementos[i].id).on("click", function(){
+            //se o cara clicar no item da lista, ele vai mudar o nome do header
+            $("#header").html(listaElementos[i].nome);
+        });
+    }
+
+
+</script>
+
+</html>
