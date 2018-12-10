@@ -1,3 +1,7 @@
+https://meninolucasdedd.github.io/AtividadesLMS2018/
+Link para acessar o index na WEB
+
+
 # AtividadesLMS2018
 Destinado a disciplina de LMS 2018
 Não consegui apagar ZapWeb, Telezap, trabalhoErro
